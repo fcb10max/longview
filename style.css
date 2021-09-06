@@ -212,7 +212,6 @@ p.about-text {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #C9C6CA;
-    margin-bottom: 40px;
     align-items: center;
 }
 .marketing-content-item-text, .marketing-content-item-img {
@@ -237,6 +236,99 @@ p.about-text {
 }
 .second{
     padding-left: 60px;
+}
+.testimonials-content-wrap {
+    height: 520px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.testimonials-content-wrap div.intro-text {
+    height: 55px;
+}
+.reviews-content {
+    height: 460px;
+    width: 1920px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.reviews-wrap {
+    width: 1170px;
+    position: relative;
+}
+.avatar {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 97px;
+    left: 75px;
+}
+.comment {
+    width: 820px;
+    height: 300px;
+    position: absolute;
+    top: 97px;
+    left: 250px;
+    background-color: #F4F3F4;
+    display: flex;justify-content: center;
+}
+.comment::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 40px solid #F4F3F4;
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent;
+    position: absolute;
+    left: -50px;
+    top: 20px;
+}
+.comment-wrap {
+    width: 732px;
+    height: 205px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.comment-author {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 30px;
+    color: #261C2B;
+}
+.comment-description {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #261C2B;
+    font-weight: bold;
+}
+.comment-text {
+    width: 732px;
+    color: #303030;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+}
+.review-selector {
+    position: relative;
+    top: 420px;
+    width: 63px;
+    height: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+.selector {
+    width: 14px;
+    height: 14px;
+    border: 1px solid #E93CAC;
+    border-radius: 14px;
+}
+.selected {
+    background-color: #E93CAC;
 }
 footer {
     width: 1920px;

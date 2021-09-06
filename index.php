@@ -120,13 +120,32 @@
 
 <div class="testimonials-content-wrap">
     <div class="intro-text">
-            <div class="one-line-text">
-                <p>Testimonials</p>
-                <div class="one-line-text-line testimonial-line"></div>
+        <div class="one-line-text">
+            <p>Testimonials</p>
+            <div class="one-line-text-line testimonial-line"></div>
+        </div>
+        <div class="larger-text">
+            <p class="larger-text-title">What people say about us</p>
+        </div>
+    </div>
+    <div class="reviews-content">
+        <div class='reviews-wrap'>
+            <div class='avatar'>
+                <img width='120px' height="120px" src="<?php echo get_template_directory_uri() . '/images/ava_man.jpg'?>" alt="">
             </div>
-            <div class="larger-text">
-                <p class="larger-text-title">What people say about us</p>
+            <div class="comment">
+                <div class='comment-wrap'>
+                    <p class='comment-author'>John Daw</p>
+                    <p class='comment-author-description'>Description​​​​​​​</p>
+                    <p class='comment-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem.  Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem.  Aliquam erat volutpat. <br><br> Donec placerat nisl magna, et faucibus arcu condimentum sed.</p>
+                </div>
             </div>
+        </div>
+        <div class='review-selector'>
+            <div class='selector selected'></div>
+            <div class='selector'></div>
+            <div class='selector'></div>
+        </div>
     </div>
 </div>
 
