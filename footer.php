@@ -61,8 +61,9 @@
             </div>
         </div>
     </div>
-
 </footer>
+
+<script src="<?php echo get_template_directory_uri() . '/index.js' ?>"></script>
 
 </body>
 </html>

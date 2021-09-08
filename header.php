@@ -13,11 +13,73 @@
 
 <header>
 
-    <div class="header">
-        <div class="header-wrap">
-            <img class="logo" src="<?php echo get_template_directory_uri() . '/images/logo.jpg' ?>" alt="">
-            <a href="#"><img src="<?php echo get_template_directory_uri() . '/images/menu.png' ?>"></img></a>
-        </div>
+<div class='header'>
+
+<nav id='nav'>
+  <div class="logo"><img src='<?php echo get_template_directory_uri() . '/images/logo.jpg'?>'></img></div>
+  <div class="openMenu">
+    <div id="nav-icon">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
+  </div>
+  <div class="mainMenu">
+    <div class='menu-wrap'>
+      <div class='item'>
+        <p class="menu-item-title">How can we help?</p>
+        <a href='#' class='menu-item-anchor'>I’d like better property management</a>
+        <a href='#' class='menu-item-anchor'>I am interested in Guaranteed Rent </a>
+        <a href='#' class='menu-item-anchor'>I am interested in Air BnB management </a>
+        <a href='#' class='menu-item-anchor'>I am interested in selling my property</a>
+        <a href='#' class='menu-item-anchor'>What do you mean “accidental landlord”?</a>
+      </div>
+      <div class='item'>
+        <p class="menu-item-title">Who are you?</p>
+        <a href='#' class='menu-item-anchor'>I am a property investor/landlord</a>
+        <a href='#' class='menu-item-anchor'>I am a property investor/landlord</a>
+        <a href='#' class='menu-item-anchor'>I want to join the LongView team</a>
+        <a href='#' class='menu-item-anchor'>I am a tenant</a>
+        <a href='#' class='menu-item-anchor'>I am from the media</a>
+        <a href='#' class='menu-item-anchor'>I am a potential partner</a>
+        <a href='#' class='menu-item-anchor'>I am a vendor</a>
+        <a href='#' class='menu-item-anchor'>I am a buyer</a>
+        <a href='#' class='menu-item-anchor'>I am part of an Owners Corporation</a>
+      </div>
+      <div class='item'>
+        <p class="menu-item-title">Knowledge hub</p>
+        <a href='#' class='menu-item-anchor'>Property Management</a>
+        <a href='#' class='menu-item-anchor'>Property Investment</a>
+        <a href='#' class='menu-item-anchor'>Property Development</a>
+        <a href='#' class='menu-item-anchor'>Property Finance</a>
+        <a href='#' class='menu-item-anchor'>Property Renovations</a>
+        <a href='#' class='menu-item-anchor'>I am a landlord</a>
+        <a href='#' class='menu-item-anchor'>I am a tenant</a>
+      </div>
+      <div class='item'>
+        <p class="menu-item-title">About us</p>
+        <a href='#' class='menu-item-anchor'>About LongView</a>
+        <a href='#' class='menu-item-anchor'>Our team</a>
+        <a href='#' class='menu-item-anchor'>Case Studies</a>
+        <a href='#' class='menu-item-anchor'>FAQ</a>
+        <a href='#' class='menu-item-anchor'>Work with us</a>
+      </div>
+      <div class='item'>
+        <p class="menu-item-title">Contact us</p>
+        <p class='phone'>Phone: 1800 931 784</p>
+        <a class='email'>Email: info@longview.com.au </p>
+        <a href='#' class='inquiry'>Send inquiry</a>
+        <div class="socials">
+            <div class="social"><a href="#" class="fa fa-facebook"></a></div>
+            <div class="social"><a href="#" class="fa fa-linkedin"></a> </div>
+        </div>
+      </div>
+    </div>
+</div>
+</nav>
+
+
+</div>
+    
 
 </header>
