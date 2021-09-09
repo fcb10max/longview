@@ -1,7 +1,13 @@
 const mainMenu = document.querySelector('.mainMenu');
+const burgerMenuSpans = document.querySelectorAll('#nav-icon>span');
 const header = document.querySelector('.header');
 const menu_icon = document.getElementById('nav-icon');
 const navigation = document.getElementById('nav');
+const logo = document.querySelector('.logo');
+const burger_menu = document.querySelector('openMenu');
+
+var media_query = window.matchMedia( "(max-width: 500)" );
+
 
 menu_icon.addEventListener('click', show_close_menu);
 

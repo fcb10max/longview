@@ -2,9 +2,8 @@
 Theme name: Longview
 */
 .header {
-    margin: 0;
-    padding: 0;
-    width: 1920px;
+    left: 0;
+    width: 1930px;
     height: 100px;
     display: flex;
     justify-content: center;
@@ -33,7 +32,7 @@ nav .mainMenu {
 }
 .menu-wrap {
     width: 1170px;
-    height: 100%;
+    height: 80%;
     display: grid;
     grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr;
 }
@@ -49,7 +48,7 @@ nav .mainMenu {
     color: #E93CAC;
 }
 .item>a {
-    margin-bottom: 5px;
+    margin-bottom: 0;
     padding: 10px 0;
     text-decoration: none;
     font-size: 14px;
@@ -125,13 +124,17 @@ transform: rotate(135deg);
 top: -11px;
 transform: rotate(-135deg);
 }
-nav .logo {
+nav .logo, .white_logo {
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-nav .logo img {
+.white-logo-and-menu {
+    display:none;
+}
+nav > .logo > img,
+.white_logo>img {
   margin: 6px;
   height: 42px;
   width: 270px;
@@ -257,6 +260,7 @@ p.about-text {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 .nav-bar-item-wrap {
     width: 230px;
@@ -269,6 +273,13 @@ p.about-text {
     font-size: 30px;
     font-family: 'Roboto', sans-serif;
     color: #E93CAC;
+}
+.navbar-line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid lightgray;
+    position: absolute;
+    top: 200px;
 }
 .nav-text {
     font-size: 16px;
@@ -594,7 +605,300 @@ p.title {
     text-align: center;
     text-decoration: none;
 }
-
 .fa-facebook, .fa-linkedin {
     color: #866F90;
+}
+@media (max-width:375px) {
+    body, header, .header,
+    .about-images {
+        width: 375px;
+    }
+    #nav {
+        height: 80px;
+        width: 340px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #nav > .logo,
+    #nav > .logo > img,
+    #nav > .white_logo,
+    #nav > .white_logo > img {
+        width: 160px;
+        height: 25px;
+    }
+    .openMenu {
+        width: 24px;
+        height: 15px;
+    }
+    .openMenu > span {
+        height: 3px;
+        width: 100%;
+        border: #fff;
+    }
+    .mainMenu {
+        width: 375px !important;
+        height: 100vw !important;
+        justify-content: flex-start;
+        align-items:center;
+    }
+    .menu-wrap,
+    .item,
+    .menu-item-title,
+    .menu-item-anchor,
+    .phone,
+    .email,
+    .inquiry,
+    .white-logo-and-menu{
+        width: 340px;
+    }
+    .white-logo-and-menu {
+        display: inline;
+    }
+    .menu-wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu-item-title {
+        font-size: 25px;
+    }
+    .menu-item-anchor {
+        display: none;
+    }
+    .about-images {
+        height: 263px;
+        position: relative;
+    }
+    .notebook {
+        width: 340px;
+        height: 163px;
+        position: absolute;
+        top: 100px;
+        left: 0;
+    }
+    .notebook > img {
+        width: 340px;
+        height: 163px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    .about-text-layer {
+        width: 375px;
+        height: 182px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+    }
+    .about-text-layer > img {
+        width: 375px;
+        height: 182px;
+    }
+    .about-text {
+        margin: 0;
+        padding: 0;
+        top: 25px !important;
+        left: 20px;
+        font-size: 35px !important;
+    }
+    .content-intro {
+        width: 375px;
+        height: 2610px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .bg-div {
+        width: 375px;
+        height: 2100px;
+        top: 500px;
+    }
+    .intro-text {
+        width: 340px;
+        height: fit-content;
+        flex-direction: column;
+    }
+    .one-line-text>p {
+        margin-bottom: 10px;
+    }
+    .larger-text-title {
+        width: 340px;
+        margin-top: 0;
+    }
+    .one-line-text-line {
+        display: none;
+    }
+    .larger-text-content {
+        width: 340px;
+        height: fit-content;
+    }
+    .larger-text-title {
+        font-size: 25px;
+    }
+    .content-image1, .content-image1 > img {
+        width: 340px;
+        height: 230px;
+    }
+    .nav-bars {
+        padding: 0;
+        width: 340px;
+        height: auto;
+    }
+    .nav-bars-wrap {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-bar-item {
+        width: 340px;
+        height: fit-content;
+        margin-bottom: 30px;
+    }
+    .nav-bar-item-wrap {
+        padding: 0 0 20px 0;
+        height: fit-content;
+        width: 300px;
+    }
+    .rent-content-wrap, .marketing-content, .testimonials-content-wrap {
+        width: 375px;
+        height: fit-content;
+    }
+    .marketing-content-rect1, .marketing-content-rect2 {
+        display: none;
+    }
+    .marketing-content-wrap, .marketing-content-item-text, .marketing-content-item-title, .marketing-content-item-description {
+        width: 340px;
+    }
+    .marketing-content-item {
+        flex-direction: column;
+        height: fit-content;
+    }
+    .marketing-content-item:last-child {
+        border-bottom: none;
+    }
+    .marketing-content-item-img,
+    .marketing-content-item-img>img {
+        width: 340px;
+        height: 230px;
+        padding: 10px 0;
+    }
+    .marketing-content-wrap>.marketing-content-item:nth-child(odd) {
+        flex-direction: column-reverse;
+    }
+    .marketing-content-item-text {
+        padding: 0;
+    }
+    .marketing-content-item-title, .marketing-content-item-description {
+        margin: 10px;
+        height: fit-content;
+        width: 340px;
+    }
+    .testimonials-content-wrap {
+        background-color: #F4F3F4;
+    }
+    .reviews-content {
+        height: 600px;
+        width: 375px;
+        position: relative;
+    }
+    .reviews-wrap {
+        width: 340px;
+    }
+    .comment::before{
+        display: none;
+    }
+    .comment, .comment-wrap, .comment-text {
+        background: none;
+        width: 340px;
+    }
+    .comment {
+        left: 0;
+    }
+    .comment-wrap {
+        position: relative;
+    }
+    .comment-author {
+        position: absolute;
+        left: 158px;
+        top: 0;
+    }
+    .comment-description {
+        position: absolute;
+        top: 50px;
+        left: 158px;
+    }
+    .comment-text {
+        position: absolute;
+        top: 110px;
+    }
+    .avatar {
+        left: 0;
+        top: 100px;
+    }
+    .avatar, .avatar>img {
+        width: 100px;
+        height: 100px;
+    }
+    .review-selector {
+        position: absolute;
+        top: 500px;
+        left: 15px;
+    }
+    footer {
+        width: 375px;
+        height: 1010px;
+    }
+    .footer-content-top {
+        background-image: url(images/dune-bg.png);
+        height: 670px;
+        align-items: flex-start;
+    }
+    .footer-content-top p.footer-lorem {
+        width: 240px;
+        font-size: 35px;
+        text-align: left;
+    }
+    .footer-content-top p.footer-lorem,
+    .footer-content-top p.footer-question,
+    .footer-button {
+        margin-left: 30px;
+    }
+    .footer-content-bottom {
+        width: 375px;
+        height: 260px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-bottom-top {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-top-item-content, .footer-bottom-top-item {
+        width: 340px;
+    }
+    #third {
+        width: 340px;
+    }
+    #third > div {
+        width: 100%;
+    }
+    .footer-bottom-top>.footer-bottom-top-item:first-child {
+        display: none;
+    }
+    .footer-bottom-bottom, .footer-bottom-bottom>* {
+        display: none;
+    }
+    .copyright_and_socials {
+        width: 375px;
+    }
+    .copyright_and_socials-wrap, .copyright-privacy-policy {
+        width: 300px;
+    }
+    .socials {
+        display: none;
+    }
 }

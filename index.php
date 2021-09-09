@@ -40,6 +40,7 @@
     <div class='nav-bars'>
         <div class='nav-bars-wrap'>
             <div class='nav-bar-item'>
+                <div class='navbar-line'></div>
                 <div class='nav-bar-item-wrap'>
                     <p class='nav-title'>Sub-title<br>…</p>
                     <img width='63px' height='50px' src="<?php echo get_template_directory_uri() . '/images/house.png'?>" alt="img">
@@ -47,6 +48,7 @@
                 </div>
             </div>
             <div class='nav-bar-item'>
+                <div class='navbar-line'></div>
                 <div class='nav-bar-item-wrap'>
                     <p class='nav-title'>Sub-title<br>…</p>
                     <img width='39px' height='50px' src="<?php echo get_template_directory_uri() . '/images/contract.png'?>" alt="img">
@@ -54,6 +56,7 @@
                 </div>
             </div>
             <div class='nav-bar-item'>
+                <div class='navbar-line'></div>
                 <div class='nav-bar-item-wrap'>
                     <p class='nav-title'>Sub-title<br>…</p>
                     <img width='64px' height='50px' src="<?php echo get_template_directory_uri() . '/images/insurance.png'?>" alt="img">
@@ -61,6 +64,7 @@
                 </div>
             </div>
             <div class='nav-bar-item'>
+                <div class='navbar-line'></div>
                 <div class='nav-bar-item-wrap'>
                     <p class='nav-title'>Sub-title<br>…</p>
                     <img width='55px' height='50px' src="<?php echo get_template_directory_uri() . '/images/open_house.png'?>" alt="img">
@@ -131,12 +135,12 @@
     <div class="reviews-content">
         <div class='reviews-wrap'>
             <div class='avatar'>
-                <img width='120px' height="120px" src="<?php echo get_template_directory_uri() . '/images/ava_man.jpg'?>" alt="">
+                <img width='120px' height="120px" src="<?php echo get_template_directory_uri() . '/images/ava_man.png'?>" alt="">
             </div>
             <div class="comment">
                 <div class='comment-wrap'>
                     <p class='comment-author'>John Daw</p>
-                    <p class='comment-author-description'>Description​​​​​​​</p>
+                    <p class='comment-description'>Description​​​​​​​</p>
                     <p class='comment-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem.  Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem.  Aliquam erat volutpat. <br><br> Donec placerat nisl magna, et faucibus arcu condimentum sed.</p>
                 </div>
             </div>

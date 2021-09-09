@@ -25,6 +25,14 @@
     </div>
   </div>
   <div class="mainMenu">
+    <div class='white-logo-and-menu'>
+      <div class="white_logo"><img src='<?php echo get_template_directory_uri() . '/images/logo.jpg'?>'></img></div>
+      <div id="nav-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
+    </div>  
     <div class='menu-wrap'>
       <div class='item'>
         <p class="menu-item-title">How can we help?</p>
