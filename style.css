@@ -951,14 +951,16 @@ p.title {
     }
     .testimonials-content-wrap {
         background-color: #F4F3F4;
+        margin-top: 130px;
+        position: relative;
     }
     .reviews-content {
         height: 600px;
         width: 375px;
-        position: relative;
     }
     .reviews-wrap {
         width: 340px;
+        position: relative
     }
     .comment::before{
         display: none;
@@ -997,12 +999,13 @@ p.title {
     }
     .review-selector {
         position: absolute;
-        top: 500px;
+        top: 540px;
         left: 15px;
     }
     footer {
         width: 375px;
         height: 1010px;
+        margin-top: 130px;
     }
     .footer-content-top {
         background-image: url(images/dune-bg.png);
