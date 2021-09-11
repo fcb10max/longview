@@ -66,7 +66,7 @@
 
 </footer>
 
-<script src="<?php echo get_template_directory_uri() . '/index.js' ?>"></script>
+<script src="<?php echo get_template_directory_uri() . '/js/index.js' ?>"></script>
 
 </body>
 </html>

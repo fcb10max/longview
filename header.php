@@ -14,11 +14,13 @@
 <header>
 
   <nav class='top-nav'>
-    <img class='logo' src="<?php echo get_template_directory_uri() . '/images/logo.jpg'?>" alt="img">
-    <div id='burger-menu' onclick ='show_hide_menu()'>
-      <span></span>
-      <span></span>
-      <span></span>
+    <div class="top-nav-wrap">
+      <img class='logo' src="<?php echo get_template_directory_uri() . '/images/logo.jpg'?>" alt="img">
+      <div id='burger-menu' onclick ='show_hide_menu()'>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
   </nav>
 

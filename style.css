@@ -645,41 +645,37 @@ p.title {
     color: #866F90;
 }
 @media (max-width:375px) {
-    body, header,
-    .about-images {
-        width: 375px;
-    }
-    header {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        position: relative;
+    body, header {
+        width: 100%;
     }
     header>.top-nav {
         height: 100% !important;
-        width: 340px !important;
+        width: 100% !important;
+        justify-content: center !important;
+        align-items: center !important;
+        z-index: 5;
+    }
+    .top-nav>.top-nav-wrap {
+        width: 340px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        z-index: 5;
     }
-    header>.top-nav > img {
+    .top-nav-wrap > img {
         width: 160px;
         height: 25px;
     }
-    header>.top-nav > #burger-menu {
+    .top-nav-wrap > #burger-menu {
         width: 25px;
         height: 25px;
         transition: none;
         transform: none;
+        position: relative;
     }
-    div#burger-menu > span {
+    .top-nav-wrap > #burger-menu > span {
         background-color: #000;
         height: 5px;
         width: 100%;
-        transform: rotate(0deg);
-        transition: 0.25s linear;
     }
     div#burger-menu > span:nth-child(1) {
         position: absolute;
