@@ -1,13 +1,14 @@
 <?php get_header(); ?>
 
 <div class="about-images">
-
-    <div class="notebook">
-        <img width="945px" height="410px" src="<?php echo get_template_directory_uri() . '/images/notebook.jpg'?>" alt="img">
-    </div>
-    <div class="about-text-layer">
-        <p class="about-text">About LongView</p>
-        <img width="1245px" height="460px" src="<?php echo get_template_directory_uri() . '/images/index.png'?>" alt="img">
+    <div class='about-images-wrap'>
+        <div class="notebook">
+            <img width="945px" height="410px" src="<?php echo get_template_directory_uri() . '/images/notebook.jpg'?>" alt="img">
+        </div>
+        <div class="about-text-layer">
+            <p class="about-text">About LongView</p>
+            <img width="1245px" height="460px" src="<?php echo get_template_directory_uri() . '/images/index.png'?>" alt="img">
+        </div>
     </div>
 
 </div>
@@ -75,23 +76,25 @@
     </div>
 </div>
 
-<div class="rent-content-wrap">
-    <div class="intro-text">
-            <div class="one-line-text">
-                <p>The Guaranteed Rent company</p>
-                <div class="one-line-text-line three"></div>
-            </div>
-            <div class="larger-text">
-                <p class="larger-text-title">The Guaranteed Rent company</p>
-                <p class="larger-text-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem.  Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
+<div class='rent-content'>
+    <div class="rent-content-wrap">
+        <div class="intro-text">
+                <div class="one-line-text">
+                    <p>The Guaranteed Rent company</p>
+                    <div class="one-line-text-line three"></div>
+                </div>
+                <div class="larger-text">
+                    <p class="larger-text-title">The Guaranteed Rent company</p>
+                    <p class="larger-text-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem.  Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+        </div>
     </div>
 </div>
 
 <div class='marketing-content'>
-    <div class='marketing-content-rect1'></div>
-    <div class='marketing-content-rect2'></div>
     <div class='marketing-content-wrap'>
+        <div class='marketing-content-rect1'></div>
+        <div class='marketing-content-rect2'></div>
         <div class="marketing-content-item">
             <div class='marketing-content-item-text'>
                 <p class='marketing-content-item-title'>Buy with<br>Guaranteed Rent</p>
@@ -122,35 +125,40 @@
     </div>
 </div>
 
-<div class="testimonials-content-wrap">
-    <div class="intro-text">
-        <div class="one-line-text">
-            <p>Testimonials</p>
-            <div class="one-line-text-line testimonial-line"></div>
-        </div>
-        <div class="larger-text">
-            <p class="larger-text-title">What people say about us</p>
-        </div>
-    </div>
-    <div class="reviews-content">
-        <div class='reviews-wrap'>
-            <div class='avatar'>
-                <img width='120px' height="120px" src="<?php echo get_template_directory_uri() . '/images/ava_man.png'?>" alt="">
+<div class='testimonials-content'>
+
+    <div class="testimonials-content-wrap">
+        <div class="intro-text">
+            <div class="one-line-text">
+                <p>Testimonials</p>
+                <div class="one-line-text-line testimonial-line"></div>
             </div>
-            <div class="comment">
-                <div class='comment-wrap'>
-                    <p class='comment-author'>John Daw</p>
-                    <p class='comment-description'>Description​​​​​​​</p>
-                    <p class='comment-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem.  Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem.  Aliquam erat volutpat. <br><br> Donec placerat nisl magna, et faucibus arcu condimentum sed.</p>
+            <div class="larger-text">
+                <p class="larger-text-title">What people say about us</p>
+            </div>
+        </div>
+        <div class="reviews-content">
+            <div class='reviews-wrap'>
+                <div class='avatar'>
+                    <img width='120px' height="120px" src="<?php echo get_template_directory_uri() . '/images/ava_man.png'?>" alt="">
+                </div>
+                <div class="comment">
+                    <div class='comment-wrap'>
+                        <p class='comment-author'>John Daw</p>
+                        <p class='comment-description'>Description​​​​​​​</p>
+                        <p class='comment-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem.  Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem.  Aliquam erat volutpat. <br><br> Donec placerat nisl magna, et faucibus arcu condimentum sed.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class='review-selector'>
-            <div class='selector selected'></div>
-            <div class='selector'></div>
-            <div class='selector'></div>
+            <div class='review-selector'>
+                <div class='selector selected'></div>
+                <div class='selector'></div>
+                <div class='selector'></div>
+            </div>
         </div>
     </div>
+
+
 </div>
 
 
