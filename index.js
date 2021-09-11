@@ -1,3 +1,5 @@
+console.log('script');
+
 const burgerMenu = document.getElementById('burger-menu');
 const wideMenu = document.querySelector('.wideMenu');
 const shortMenu = document.querySelector('.shortMenu');
@@ -7,8 +9,8 @@ const shortBurgerMenu = document.getElementById('short-burger-menu');
 
 const media_query = window.matchMedia( "(max-width:375px)" );
 
-
-burgerMenu.addEventListener('click', () => {
+function show_hide_menu() {
+  console.log('clicked');
   if (!media_query.matches) {
     console.log('not media');
     shortMenu.style.display = 'none';
@@ -26,15 +28,13 @@ burgerMenu.addEventListener('click', () => {
     }
   } else if (media_query.matches) {
     console.log('media');
-    shortMenu.setAttribute('style', 'display: flex !important');
+    shortMenu.style.display = 'flex';
     shortMenu.style.left = '0';
     shortMenu.style.opacity = '1';
-    shortMenuNavBar.setAttribute('style', 'display: flex !important');
-    shortMenuWrap.setAttribute('style', 'display: flex !important');
   }
-})
+}
 
-shortBurgerMenu.onclick = () => {
+function hide_short_menu() {
   shortMenu.style.left = '100%';
   document.body.style.position = '';
   shortMenu.style.opacity = '0';
