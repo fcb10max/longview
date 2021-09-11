@@ -67,6 +67,7 @@
 </footer>
 
 <script src="<?php echo get_template_directory_uri() . '/js/index.js' ?>"></script>
+<script src="<?php echo get_template_directory_uri() . '/js/commentSelector.js' ?>"></script>
 
 </body>
 </html>

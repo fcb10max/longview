@@ -138,7 +138,7 @@
             </div>
         </div>
         <div class="reviews-content">
-            <div class='reviews-wrap'>
+            <div class='reviews-wrap' id="firstReview">
                 <div class='avatar'>
                     <img width='120px' height="120px" src="<?php echo get_template_directory_uri() . '/images/ava_man.png'?>" alt="">
                 </div>
@@ -150,10 +150,36 @@
                     </div>
                 </div>
             </div>
+            <div class='reviews-wrap hidden' id="secondReview">
+                <div class='avatar'>
+                    <img width='120px' height="120px" src="<?php echo get_template_directory_uri() . '/images/ava_woman.png'?>" alt="">
+                </div>
+                <div class="comment">
+                    <div class='comment-wrap'>
+                        <p class='comment-author'>Sarah Connor</p>
+                        <p class='comment-description'>Description​​​​​​​</p>
+                        <p class='comment-text'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, dignissimos vel. Rem fugiat harum voluptatibus voluptas quibusdam nihil expedita sed eligendi perspiciatis natus accusamus eum officiis suscipit necessitatibus amet ipsam, maiores velit dolor ducimus quidem dolores assumenda id.<br><br>Ducimus, rem!</p>
+                    </div>
+                </div>
+            </div>
+            <div class='reviews-wrap hidden' id="thirdReview">
+                <div class='avatar'>
+                    <img width='120px' height="120px" src="<?php echo get_template_directory_uri() . '/images/ava_man.png'?>" alt="">
+                </div>
+                <div class="comment">
+                    <div class='comment-wrap'>
+                        <p class='comment-author'>Tom Holland</p>
+                        <p class='comment-description'>Description​​​​​​​</p>
+                        <p class='comment-text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam vitae ratione repudiandae, temporibus voluptatum deserunt minus ipsum non adipisci dolor atque quas eveniet voluptas vel enim?<br><br>Iure porro dolorum fugiat placeat numquam non, id, voluptatem maxime error cum magni ea delectus est facere sapiente nam fugit atque recusandae similique accusantium voluptatibus, natus tempore quidem? Sunt neque fugiat eius perspiciatis quod!</p>
+                    </div>
+                        
+                </div>
+            </div>
+        </div>
             <div class='review-selector'>
-                <div class='selector selected'></div>
-                <div class='selector'></div>
-                <div class='selector'></div>
+                <div class='selector selected' id='selector1'></div>
+                <div class='selector' id='selector2'></div>
+                <div class='selector' id='selector3'></div>
             </div>
         </div>
     </div>

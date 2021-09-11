@@ -35,7 +35,9 @@ function show_hide_menu() {
 }
 
 function hide_short_menu() {
-  shortMenu.style.left = '100%';
-  document.body.style.position = '';
-  shortMenu.style.opacity = '0';
+  if (media_query.matches) {
+    shortMenu.style.left = '100%';
+    document.body.style.position = '';
+    shortMenu.style.opacity = '0';
+  }
 }

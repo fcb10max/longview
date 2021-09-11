@@ -17,18 +17,27 @@ header {
     align-items: center;
     position: relative;
 }
-header > nav.top-nav {
+.top-nav {
+    width: 1920px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top-nav-wrap {
+    padding: 0;
+    margin: 0;
     width: 1170px;
     height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-header > nav.top-nav > img.logo {
+.top-nav-wrap > img.logo {
     width: 270px;
     height: 42px;
 }
-header > nav > div#burger-menu {
+header > nav.top-nav > .top-nav-wrap > #burger-menu {
     width: 30px;
     height: 22px;
     display: flex;
@@ -387,6 +396,7 @@ p.about-text {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 .testimonials-content-wrap {
     width: 1920px;
@@ -411,6 +421,10 @@ p.about-text {
     width: 1170px;
     position: relative;
 }
+.reviews-content > .hidden {
+    display: none;
+    left: 100%;
+}
 .avatar {
     width: 120px;
     height: 120px;
@@ -425,7 +439,8 @@ p.about-text {
     top: 97px;
     left: 250px;
     background-color: #F4F3F4;
-    display: flex;justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 .comment::before {
     content: '';
@@ -466,8 +481,8 @@ p.about-text {
     font-weight: normal;
 }
 .review-selector {
-    position: relative;
-    top: 420px;
+    position: absolute;
+    top: 480px;
     width: 63px;
     height: 14px;
     display: flex;
@@ -791,11 +806,11 @@ p.title {
         content: '\FE40';
         position: absolute;
         left: 322px;
-        top: 17px;
+        top: 8px;
         }
     details[open] > summary::before {
         content: '\FE3F';
-        top: 0;
+        top: 7px;
     }
     details[open] > summary {
         color: #E93CAC;
@@ -928,6 +943,7 @@ p.title {
     .marketing-content-item {
         flex-direction: column;
         height: fit-content;
+        width: 340px;
     }
     .marketing-content-item:last-child {
         border-bottom: none;
@@ -957,10 +973,13 @@ p.title {
     .reviews-content {
         height: 600px;
         width: 375px;
+
     }
     .reviews-wrap {
         width: 340px;
-        position: relative
+        position: relative;
+        display: flex;
+        flex-direction: row;
     }
     .comment::before{
         display: none;
@@ -970,7 +989,10 @@ p.title {
         width: 340px;
     }
     .comment {
+        position: relative;
         left: 0;
+        opacity: 1;
+        transition: left 0.5s linear, opacity 0.5s linear;
     }
     .comment-wrap {
         position: relative;
